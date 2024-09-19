@@ -1,0 +1,197 @@
+:root {
+  --orange-color: #ff6600;
+  --dark-color: #000000;
+  --silver-color: #999999;
+  --light-grey-color: #e2e2e2;
+  --white-color: #ffffff;
+}
+
+/* Reset styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+  color: currentColor;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input {
+  font-family: inherit;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Inter', sans-serif;
+}
+
+.main_todo_div {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    background-color: var(--light-grey-color);
+    padding: 24px;
+}
+
+.todo_main_tittle {
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 16px;
+}
+
+.div_label {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 4px;
+    position: relative;
+}
+
+.todo_search_input {
+    width: 100%;
+    height: 32px;
+    border-radius: 4px;
+}
+
+.icon_button {
+    border: none;
+    background-color: transparent;
+}
+
+.icon_button.search {
+    position: absolute;
+    z-index: 1;
+    right: -2px;
+    top: 3px;
+}
+
+.search_icon {
+    &:active {
+        fill: var(--orange-color);
+    }
+}
+
+.div_buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+
+.todo_variables_button {
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 10px;
+    text-transform: uppercase;
+    padding: 0;
+    &:active {
+        color: var(--orange-color);
+    }
+}
+
+.active_todo {
+    background-color: var(--white-color);
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+.active_todo.disabled {
+    opacity: 0.5;
+}
+
+.div_between {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.variable_text_with_border {
+    color: var(--orange-color);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 10px;
+    padding: 2px 3px;
+    border: 1px solid var(--orange-color);
+    border-radius: 2px;
+}
+
+.icon_button.edit_or_delete {
+    padding: 0;
+}
+
+.icons_buttons_div {
+    display: flex;
+}
+
+.todo_tittle {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.todo_text {
+    font-weight: normal;
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+.icon_button.orange {
+    display: flex;
+    align-items: center;
+    background-color: var(--orange-color);
+    color: var(--white-color);
+    border-radius: 8px;
+    padding: 8px 12px;
+}
+
+.check_round_icon {
+    fill: var(--white-color);
+    margin-right: 4px;
+}
+
+.add_icon {
+    fill: var(--white-color);
+}
+
+.div_flex_end {
+    display: flex;
+    justify-content: end;
+}

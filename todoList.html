@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo List</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.css"
+      integrity="sha512-gnAN+RgTMylunXI7AMg+PtcUGpKZFkZJoFIkAWvdPFRrFJz3p2tx4+9xbjILRfN7CzoViMgS8vSf06fSQzWZjA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="todoList.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="main_todo_div">
+        <h2 class="todo_main_tittle">Список справ</h2>
+        <div class="div_label">
+            <input class="todo_search_input" type="text" />
+            <button class="icon_button search">
+                <svg class="search_icon" width="24" height="24">
+                    <use href="/icons/symbol-defs.svg#search"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="div_buttons">
+            <button class="todo_variables_button">Домашні справи</button>
+            <button class="todo_variables_button">Робота</button>
+            <button class="todo_variables_button">Фітнес</button>
+        </div>
+
+        <div class="active_todo">
+            <div class="div_between">
+                <p class="variable_text_with_border">Домашні справи</p>
+                <div class="icons_buttons_div">
+                    <button class="icon_button edit_or_delete">
+                        <svg class="edit_icon" width="24" height="24">
+                            <use href="/icons/symbol-defs.svg#edit"></use>
+                        </svg>
+                    </button>
+                    <button class="icon_button edit_or_delete">
+                        <svg class="delete_icon" width="24" height="24">
+                            <use href="/icons/symbol-defs.svg#delete"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <h3 class="todo_tittle">Купити продукти</h3>
+            <p class="todo_text">Скласти список необхідних продуктів та відвідати магазин.</p>
+            <button class="icon_button orange">
+                <svg class="check_round_icon" width="20" height="20">
+                    <use href="/icons/symbol-defs.svg#check-round"></use>
+                </svg>
+                Завершити
+            </button>
+        </div>
+
+        <div class="active_todo disabled">
+            <div class="div_between">
+                <p class="variable_text_with_border">Фітнес</p>
+                <div class="icons_buttons_div">
+                    <button class="icon_button edit_or_delete">
+                        <svg class="delete_icon" width="24" height="24">
+                            <use href="/icons/symbol-defs.svg#delete"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <h3 class="todo_tittle ">Пройти прогулянку на свіжому повітрі</h3>
+            <p class="todo_text">Встановити таймер на 30 хвилин і прогулятися в парку.</p>
+            <button class="icon_button orange">
+                <svg class="check_round_icon" width="20" height="20">
+                    <use href="/icons/symbol-defs.svg#check-round"></use>
+                </svg>
+                Завершити
+            </button>
+        </div>
+        
+        <div class="div_flex_end">
+            <button class="icon_button orange">
+                <svg class="add_icon" width="24" height="24">
+                    <use href="/icons/symbol-defs.svg#add"></use>
+                </svg>
+                Додати справу
+            </button>
+        </div>
+    </div>
+  </body>
+</html>
